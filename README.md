@@ -30,6 +30,18 @@ For Wikimedia developers, you can find more information on development keys [her
    $ eval "$(pyenv init -)"
    gdrive_to_commons/$ pyenv virtualenv 3.5.3 gdrive-env-3.5.3
    ```
+   For Linux or Ubuntu use commands:
+   ```bash
+   mkdir local_Development
+   cd local_Development
+   git clone https://github.com/tonythomas01/gdrive-to-commons.git
+   sudo apt-get install python3
+   python3 -m pip install --upgrade pip
+   sudo apt-get install python3-venv
+   python3 -m venv myvenv
+   source myvenv/bin/activate
+   ```
+   
    This will create a pyenv-virtualenv for you and probably place it on your
    `~/home/<username>/.pyenv/versions/`. You can activate that manually using
    ```
